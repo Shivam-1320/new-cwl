@@ -1,0 +1,301 @@
+/* Neon Heading */
+.neon-heading {
+  color: #ffffff;
+  text-shadow:
+    0 0 5px #00fff7,
+    0 0 10px #00fff7,
+    0 0 20px #00fff7,
+    0 0 30px #00fff7;
+  font-weight: 700;
+}
+
+/* Neon Button */
+.neon-btn {
+  background: transparent;
+  color: #00fff7;
+  border: 2px solid #00fff7;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00fff7;
+}
+
+.neon-btn1 {
+  background: transparent;
+  color: #00fff7;
+  border: 2px solid #00fff7;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00fff7;
+}
+
+
+.neon-btn1:hover {
+  background-color: #00fff7;
+  color: #37517e;
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7;
+}
+
+
+.neon-btn:hover {
+  background-color: #00fff7;
+  color: #37517e;
+  box-shadow: 0 0 20px #00fff7, 0 0 40px #00fff7;
+}
+
+/* Neon Card / Box */
+.neon-box {
+  background: rgba(55, 81, 126, 0.5);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ff00f7;
+  box-shadow: 0 0 15px #ff00f7;
+  backdrop-filter: blur(10px);
+}
+
+/* Fade-in on scroll */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  font-size: 15px;
+  margin-left: 22px;
+}
+
+/* General Neon Text Glow */
+.neon-text {
+  color: #ffffff;
+  text-shadow:
+    0 0 5px #00fff7,
+    0 0 10px #00fff7,
+    0 0 20px #00fff7,
+    0 0 40px #00fff7;
+}
+
+/* Alternate Neon Pink Text */
+.neon-pink-text {
+  color: #ffffff;
+  text-shadow:
+    0 0 5px #ff00f7,
+    0 0 10px #ff00f7,
+    0 0 20px #ff00f7,
+    0 0 40px #ff00f7;
+}
+/* Techy Neon Text */
+.tech-text {
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1.5px;
+  text-shadow:
+    0 0 3px #00fff7,
+    0 0 6px #00fff7;
+}
+
+/* Futuristic Border Box */
+.tech-box {
+  border: 1px solid rgba(0, 255, 247, 0.4);
+  background: rgba(55, 81, 126, 0.4);
+  border-radius: 8px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 255, 247, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glowing border animation (like a circuit pulse) */
+.tech-box::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border: 2px solid #00fff7;
+  opacity: 0.1;
+  animation: pulse-border 3s infinite ease-in-out;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    box-shadow: 0 0 10px #00fff7;
+    opacity: 0.1;
+  }
+  50% {
+    box-shadow: 0 0 20px #00fff7;
+    opacity: 0.3;
+  }
+}
+
+/* Futuristic Button */
+.tech-button {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: transparent;
+  color: #00fff7;
+  border: 2px solid #00fff7;
+  border-radius: 4px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tech-button::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00fff7;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.tech-button:hover {
+  background-color: #00fff7;
+  color: #37517e;
+}
+
+.tech-button:hover::after {
+  transform: scaleX(1);
+}
+.animated-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.05;
+}
+.code-divider {
+  font-family: 'Courier New', monospace;
+  color: #00fff7;
+  background: #2c3e50;
+  padding: 10px 20px;
+  margin: 40px 0;
+  text-align: center;
+  border-left: 3px solid #00fff7;
+  border-right: 3px solid #00fff7;
+  box-shadow: inset 0 0 10px rgba(0, 255, 247, 0.5);
+}
+/* Section Base */
+.hero-tech-section {
+  background-color: #37517e;
+  padding: 100px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Corner Decor Setup */
+.corner-decor {
+  position: fixed;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.top-left-glow {
+  top: -60px;
+  left: -60px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%; /* <-- ensures full circular glow */
+  background: radial-gradient(circle, #00fff7 0%, transparent 80%);
+  animation: floatGlow 6s ease-in-out infinite;
+  z-index: 0;
+}
+
+
+.bottom-right-pulse {
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ff00f7 0%, transparent 70%);
+  animation: pulseOrb 3s ease-in-out infinite;
+}
+
+.top-right-particles {
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url('assets/custom/particles.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.08;
+  animation: driftRight 12s linear infinite;
+}
+
+.orbit-icon {
+  bottom: 20px;
+  left: 20px;
+  animation: rotateOrb 15s linear infinite;
+}
+
+/* Animations */
+@keyframes floatGlow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(10px, 10px); }
+}
+
+@keyframes pulseOrb {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.3); opacity: 0.5; }
+}
+
+@keyframes driftRight {
+  0% { transform: translateX(0px) rotate(0deg); }
+  100% { transform: translateX(20px) rotate(360deg); }
+}
+
+@keyframes rotateOrb {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.white-particles-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.white-particles-bg::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(#00fff7 1px, transparent 0),
+    radial-gradient(#ff00f7 1px, transparent 0);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  animation: moveParticles 20s linear infinite;
+  opacity: 0.08;
+}
+
+@keyframes moveParticles {
+  0% { background-position: 0 0, 25px 25px; }
+  100% { background-position: 50px 50px, 75px 75px; }
+}
+/* Fade-in Scroll Animation */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+  will-change: opacity, transform;
+}
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

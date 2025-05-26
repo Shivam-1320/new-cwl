@@ -1,0 +1,8 @@
+POST:
+Array
+(
+    [email] => keyurparmar754@gmail.com
+)
+
+
+RAW:
