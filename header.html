@@ -1,0 +1,124 @@
+<head>
+
+
+
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Cloudwisel.com</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo/cw-p.svg" rel="icon">
+  <link href="assets/img/logo/cw-p.svg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!--custom effact -->
+
+  <link rel="stylesheet" href="assets/custom/custom-effects.css">
+<script src="assets/custom/custom-effects.js"></script>
+
+  <!--razorpay gateway  -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+<style>
+/* Make sure your pricing card container is relatively positioned */
+.pricing-card {
+  position: relative;
+}
+
+.best-selling-ribbon {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: red;
+  color: white;
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 10px red;
+  animation: glow-blink 1.5s infinite;
+  z-index: 10;
+}
+
+@keyframes glow-blink {
+  0%, 100% {
+    box-shadow: 0 0 10px red;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 20px red;
+    opacity: 0.7;
+  }
+}
+
+
+
+
+</style>
+
+  
+
+</head>
+
+
+<body class="index-page">
+  <!-- Background Animation Layers -->
+<div class="white-particles-bg"></div>
+<div class="bg-grid-lines"></div>
+
+
+
+ 
+  
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.php" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <img src="assets/img/logo/cw-p-s.svg" alt="img">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <!-- Desktop: stays on-page scroll -->
+          <li class="d-none d-xl-block"><a href="#portfolio">Portfolio</a></li>
+          
+          <!-- Mobile: opens new page -->
+          <li class="d-xl-none"><a href="portfolio.php">Portfolio</a></li>
+          
+          <li><a href="#team">Team</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="shop.php">Shop</a></li>
+          
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+              <a class="btn-getstarted" target="_blank" href="https://calendly.com/keyurparmar754/30min">Get Consultation</a>
+    </div>
+  </header>
